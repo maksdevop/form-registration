@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__title">Регистрация</div>
+            <hr class="header__hr">
+        </header>
+        <main>
+            <h2 class="main__title">Заполните Ваши данные</h2>
+           <div class="main__form">
+             <div class="main__form--left">
+                <input placeholder="Имя" class="main__form--input-name"></input>
+                <div class="eye">
+                    <input type="password" placeholder="Пароль" class="main__form--input-pass"></input>
+                    <img src="./img/eye.png" alt="" class="eye-pass">
+                </div>
+            </div>
+            <div class="main__form--right">
+                <input placeholder="Email" class="main__form--input-mail"></input>
+                <select  class="main__form--select-role">
+                    <option value="">Должность</option>
+                    <option value="Front-End">1. Front-End</option>
+                    <option value="Back-End">2. Back-End</option>
+                    <option value="IOS Developer">3. IOS Developer</option>
+                    <option value="HR Manager">4. HR Manager</option>
+                </select>
+                <div class="eye">
+                    <input type="password" placeholder="Повторите пароль" class="main__form--input-again-pass"></input>
+                    <img src="./img/eye.png" alt="" class="eye-again-pass">
+                </div>
+            </div>
+           </div>
+           <div class="main__error"></div>
+           <hr class="main__hr">
+        </main>
+        <footer class="footer">
+            <div class="footer__sending">
+                <div title=".slideThree">
+                    <!-- .slideThree -->
+                    <div class="slideThree">  
+                    <input type="checkbox" value="None" id="slideThree" name="check" checked />
+                    <label for="slideThree"></label>
+                    </div>
+                </div>
+                <div class="footer__wrap">
+                    <h3 class="footer__title">Хотите чтобы Ваш профиль видели другие участники платформы? </h3>
+                    <div class="footer__subtitle">Включает профиль для просмотра другими пользователями по ссылке</div>
+                </div>
+            </div>
+            <div class="footer__registration">
+                <div class="footer__checkbox">
+                    <input id="checkbox" type="checkbox" value="None" name="check" checked />
+                    <p class="footer__text">Регистрируясь, Вы соглашаетесь  с <a href="#">политикой конфиденциальности</a> и обработкой <a href="#">персональных данных</a></p>
+                
+                </div>
+                <p><button class="footer__btn">Зарегистрироваться</button></p>
+            </div>
+        </footer>
+        
+    </div>
+    <div class="message">
+        <p class="successfully">Ваша заявка была отправлена!</p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
